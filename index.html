@@ -3,301 +3,313 @@
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Xolmirzayeva | Oila Shajarasi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bizning oilamiz — Shajara</title>
 <style>
 :root {
-  --green:#173d32;
-  --gold:#c5a46a;
-  --cream:#f5efe3;
-  --paper:#fffaf1;
-  --text:#39372f;
+  --green:#183e32;
+  --green2:#285b48;
+  --gold:#c49b52;
+  --cream:#f8f4e9;
+  --paper:#fffdf7;
+  --ink:#29372f;
 }
 *{box-sizing:border-box}
 body{
-  margin:0;
-  background:var(--cream);
-  color:var(--text);
-  font-family:Georgia,serif;
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:Georgia,"Times New Roman",serif;line-height:1.6
 }
 header{
-  background:var(--green);
-  color:#f4dfb6;
-  text-align:center;
-  padding:65px 15px;
-  border-bottom:5px solid var(--gold);
+  text-align:center;padding:65px 18px 55px;
+  color:#fff;background:linear-gradient(140deg,#102e26,#285b48)
 }
-header h1{
-  font-size:clamp(35px,7vw,60px);
-  letter-spacing:4px;
-  margin:15px 0;
-}
-header p{font-size:19px}
+header .ornament{color:var(--gold);font-size:27px}
+header h1{font-size:clamp(32px,7vw,55px);margin:10px 0}
+header p{color:#e9dfc9;margin:8px auto;max-width:650px}
 nav{
-  background:var(--paper);
-  padding:15px;
-  text-align:center;
-  position:sticky;
-  top:0;
+  position:sticky;top:0;z-index:5;background:#102e26;
+  display:flex;justify-content:center;flex-wrap:wrap;gap:5px;padding:10px
 }
-nav a{
-  color:var(--green);
-  text-decoration:none;
-  margin:8px;
-  font-size:14px;
-}
-main{
-  max-width:1000px;
-  margin:auto;
-  padding:25px 15px;
-}
-h2{
-  color:var(--green);
-  text-align:center;
-  font-weight:normal;
-  font-size:30px;
-}
-.intro{
-  text-align:center;
-  line-height:1.8;
-  max-width:700px;
-  margin:auto;
-}
-.branch{
-  background:var(--paper);
-  border:1px solid #d9c7a3;
-  border-radius:14px;
-  padding:20px;
-  margin:20px 0;
-}
-.branch h3{
-  color:var(--green);
-  text-align:center;
-  font-weight:normal;
-  font-size:23px;
-}
-.couple{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+nav a{color:#fff;text-decoration:none;padding:8px 13px;font-size:14px}
+nav a:hover{color:var(--gold)}
+main{max-width:1050px;margin:auto;padding:25px 16px 65px}
+section{margin:35px 0;scroll-margin-top:70px}
+h2{color:var(--green);font-size:27px;text-align:center}
+.intro{text-align:center;max-width:720px;margin:0 auto 25px}
+.gold-line{width:75px;height:2px;background:var(--gold);margin:12px auto 25px}
+.panel{
+  background:var(--paper);border:1px solid #e8dcc5;border-radius:15px;
+  padding:18px;margin:15px 0;box-shadow:0 5px 18px #183e3210
 }
 .person{
-  background:#f1e8d7;
-  border:1px solid #ddcba8;
-  padding:15px 8px;
-  border-radius:9px;
-  text-align:center;
-  line-height:1.5;
+  display:inline-block;background:#fffdf7;border:1px solid #d9c69f;
+  border-radius:9px;padding:8px 12px;margin:5px;color:var(--green)
 }
-.person small{
-  display:block;
-  color:#796c55;
-  margin-top:5px;
+.person strong{color:var(--green)}
+.role{font-size:12px;color:#8a7043;display:block}
+.couple{border-left:3px solid var(--gold);padding-left:13px;margin:12px 0}
+details{
+  background:#fffdf8;border:1px solid #e5d8bf;border-radius:12px;
+  margin:12px 0;overflow:hidden
 }
-.arrow{
-  text-align:center;
-  color:#ad8a4e;
-  font-size:27px;
-  margin:8px;
+summary{
+  cursor:pointer;padding:14px 16px;color:var(--green);
+  font-weight:bold;background:#f1ead9
 }
-.child{
-  background:#e5ede5;
-  border:1px solid #b9cbb9;
-  color:var(--green);
-  padding:16px;
-  text-align:center;
-  border-radius:9px;
-  margin-top:10px;
+details .inside{padding:8px 16px 16px}
+details details{margin-left:8px}
+.note{font-size:13px;color:#786c58}
+.hero-card{
+  text-align:center;background:var(--green);color:white;
+  padding:22px;border-radius:14px;max-width:500px;margin:20px auto
 }
-.children{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+.hero-card h3{margin:5px;color:#fff}
+.hero-card p{margin:5px;color:#e8dfc9}
+button{
+  background:var(--green2);color:white;border:0;border-radius:20px;
+  padding:9px 16px;margin:5px;cursor:pointer
 }
-.history{
-  background:var(--green);
-  color:#f4dfb6;
-  padding:30px 20px;
-  border-radius:14px;
-  text-align:center;
-  line-height:1.9;
-}
-.history h2{color:#f4dfb6}
+button:hover{background:var(--green)}
+.controls{text-align:center;margin:15px}
 footer{
-  background:#102d25;
-  color:#e6d3a9;
-  text-align:center;
-  padding:25px;
+  text-align:center;padding:30px 15px;background:#102e26;color:#e9dfc9
 }
-@media(max-width:550px){
-  .couple{grid-template-columns:1fr 1fr}
-  .person{font-size:13px}
-  nav a{display:inline-block}
+footer span{color:var(--gold)}
+@media(max-width:600px){
+  header{padding:45px 15px}
+  nav a{padding:7px 8px;font-size:12px}
+  h2{font-size:23px}
+  .panel{padding:13px}
 }
 </style>
 </head>
 <body>
 
-<header>
-  <p>AVLODLAR XOTIRASI</p>
-  <h1>XOLMIRZAYEVA</h1>
-  <p>OILA SHAJARASI</p>
-  <p>O'tmishimiz — ildizimiz, kelajagimiz — davomimiz.</p>
+<header id="home">
+  <div class="ornament">✦ ❖ ✦</div>
+  <h1>Bizning oilamiz</h1>
+  <p>Avlodlardan avlodlarga davom etib kelayotgan mehr, xotira va qadriyatlar.</p>
+  <div class="ornament">❖</div>
+  <p>Oila shajarasi</p>
 </header>
 
 <nav>
-  <a href="#bosh">Bosh sahifa</a>
+  <a href="#home">Bosh sahifa</a>
   <a href="#shajara">Shajara</a>
-  <a href="#avlod">Avlodlar</a>
+  <a href="#ota">Ota tomoni</a>
+  <a href="#ona">Ona tomoni</a>
   <a href="#tarix">Oila tarixi</a>
 </nav>
 
 <main>
-
-<section id="bosh">
-<h2>Bizning oilamiz</h2>
-<p class="intro">
-Xolmirzayeva oilasining raqamli shajarasiga xush kelibsiz.
-Ushbu loyiha ajdodlarimizning ismlari, oilaviy rishtalarimiz
-va avlodlar davomiyligini saqlash maqsadida yaratildi.
-Har bir avlod — tariximizning bebaho bir qismidir.
-</p>
-</section>
-
 <section id="shajara">
-<h2>Oila shajarasi</h2>
-
-<div class="branch">
-<h3>Ota tomondan — Xolmirzayevlar</h3>
-<div class="couple">
-<div class="person">
-Asqarali Haydarov
-<small>Katta bobo</small>
-</div>
-<div class="person">
-Lutfiya Haydarova
-<small>Katta buvi</small>
-</div>
-</div>
-<div class="arrow">↓</div>
-<div class="couple">
-<div class="person">
-Xolmirza Haydarov Asqaraliyevich
-<small>Bobo</small>
-</div>
-<div class="person">
-Muhammad Ali Tulkinov
-<small>Katta bobo</small>
-</div>
-<div class="person">
-Rohila Haydarova Muhammadaliyevna
-<small>Buvi</small>
-</div>
-<div class="person">
-Marifat Tulkinova
-<small>Katta buvi</small>
-</div>
-</div>
-<div class="arrow">↓</div>
-<div class="child">
-<strong>Xakimjon Haydarov Xolmirzayevich</strong>
-<br>Ota
-</div>
-</div>
-
-<div class="branch">
-<h3>Ona tomondan — Ubaydullayevlar</h3>
-<div class="couple">
-<div class="person">
-Isroil Urayimjanov
-<small>Katta bobo</small>
-</div>
-<div class="person">
-Mastura Urayimjanova
-<small>Katta buvi</small>
-</div>
-<div class="person">
-To'xtaboy Mamataliyev
-<small>Katta bobo</small>
-</div>
-<div class="person">
-Orifa Mamataliyeva
-<small>Katta buvi</small>
-</div>
-</div>
-<div class="arrow">↓</div>
-<div class="couple">
-<div class="person">
-Abdumutal Ubaydullayev Isroilevich
-<small>Bobo</small>
-</div>
-<div class="person">
-Manzura Ubaydullayeva To'xtaboyevna
-<small>Buvi</small>
-</div>
-</div>
-<div class="arrow">↓</div>
-<div class="child">
-<strong>Malohat Haydarova Abdumutalovna</strong>
-<br>Ona
-</div>
-</div>
-
-<div class="branch">
-<h3>Farzandlar — 1-avlod</h3>
-<div class="children">
-<div class="child">
-<strong>Umida Xolmirzayeva</strong>
-<br>Xakimjon qizi
-</div>
-<div class="child">
-<strong>Oyshaxon Xolmirzayeva</strong>
-<br>Xakimjon qizi
-</div>
-<div class="child">
-<strong>Karimjon Xolmirzayev</strong>
-<br>Xakimjon o'g'li
-</div>
-<div class="child">
-<strong>Ismoil Xolmirzayev</strong>
-<br>Xakimjon o'g'li
-</div>
-</div>
-</div>
+  <h2>Bizning shajaramiz</h2>
+  <div class="gold-line"></div>
+  <p class="intro">
+    Ushbu shajara oilamizning ota va ona tomonidagi ajdodlarimiz,
+    farzandlari va keyingi avlodlarini bir joyga jamlaydi.
+    Har bir ism — oilamiz tarixining bir bo‘lagi.
+  </p>
+  <div class="hero-card">
+    <span>OILAMIZNING MARKAZI</span>
+    <h3>Xakimjon va Malohat</h3>
+    <p>Ularning farzandlari va davom etayotgan avlodlari</p>
+  </div>
+  <div class="controls">
+    <button onclick="document.querySelectorAll('details').forEach(x=>x.open=true)">Barcha shoxlarni ochish</button>
+    <button onclick="document.querySelectorAll('details').forEach(x=>x.open=false)">Barcha shoxlarni yopish</button>
+  </div>
 </section>
 
-<section id="avlod">
-<h2>To'rt avlod tarixi</h2>
-<div class="branch">
-<p><strong>1-avlod:</strong> Umida, Oyshaxon, Karimjon va Ismoil.</p>
-<p><strong>2-avlod:</strong> Xakimjon va Malohat.</p>
-<p><strong>3-avlod:</strong> Xolmirza, Rohila, Abdumutal va Manzura.</p>
-<p><strong>4-avlod:</strong> Asqarali, Lutfiya, Muhammad Ali, Marifat, Isroil, Mastura, To'xtaboy va Orifa.</p>
+<section id="ota">
+<h2>Ota tomondan shajara</h2>
+<div class="gold-line"></div>
+<p class="intro">Xolmirzayevlar avlodining ota tomondagi ajdodlari va qarindoshlari.</p>
+
+<details open>
+<summary>1-avlod — katta bobolar va buvilar</summary>
+<div class="inside">
+  <div class="couple">
+    <strong>Asqarali Haydarov</strong> + <strong>Lutfiya Haydarova</strong>
+    <p class="note">Ularning farzandi:</p>
+    <strong>Xolmirza Haydarov Asqaraliyevich</strong>
+  </div>
+  <div class="couple">
+    <strong>Muhammad Ali Tulkinov</strong> + <strong>Marifat Tulkinova</strong>
+    <p class="note">Ularning farzandi:</p>
+    <strong>Rohila Haydarova Muhammadaliyevna</strong>
+  </div>
 </div>
+</details>
+
+<details open>
+<summary>2-avlod — bobom va buvim</summary>
+<div class="inside">
+  <div class="person">Xolmirza Haydarov Asqaraliyevich</div>
+  <div class="person">Rohila Haydarova Muhammadaliyevna</div>
+  <p class="note">Ularning farzandlari:</p>
+
+  <details open><summary>Xakimjon Haydarov Xolmirzayevich — otam</summary>
+    <div class="inside">
+      <div class="person">Xakimjon Haydarov Xolmirzayevich</div>
+      <div class="person">Malohat Haydarova Abdumutalovna — turmush o‘rtog‘i</div>
+      <details open>
+      <summary>Ularning farzandlari</summary>
+      <div class="inside">
+        <div class="person">Oyshaxon Xolmirzayeva Xakimjon qizi</div>
+        <div class="person">Karimjon Xolmirzayev Xakimjon o‘g‘li</div>
+        <div class="person">Ismoil Xolmirzayev Xakimjon o‘g‘li</div>
+        <div class="person">Umida Xolmirzayeva Xakimjon qizi</div>
+      </div></details>
+    </div>
+  </details>
+
+  <details><summary>Rahima va uning oilasi</summary><div class="inside">
+    <div class="person">Rahima Qodirova</div><div class="person">Usman Qodirov</div>
+    <p>Farzandlari:</p>
+    <details><summary>Otabek Qodirov</summary><div class="inside">
+      <div class="person">Marjona Karimova — turmush o‘rtog‘i</div>
+      <div class="person">Imona Qodirova — farzandi</div>
+    </div></details>
+    <details><summary>Robiya Qodirova</summary><div class="inside">
+      <div class="person">Asilbek Tursunov — turmush o‘rtog‘i</div>
+      <div class="person">Akbarali Tursunov</div><div class="person">Ruxshona Tursunova</div>
+    </div></details>
+    <div class="person">Madina Qodirova</div>
+  </div></details>
+
+  <details><summary>Akram va uning oilasi</summary><div class="inside">
+    <div class="person">Akram Xaydarov</div><div class="person">Nigora Xaydarova</div>
+    <p>Farzandlari:</p>
+    <div class="person">Noila Xolmirzayeva</div>
+    <details><summary>Muslima Xolmirzayeva</summary><div class="inside">
+      <div class="person">Islombek Abdullayev — turmush o‘rtog‘i</div>
+      <div class="person">Ali Akbar Abdullayev — farzandi</div>
+    </div></details>
+  </div></details>
+
+  <details><summary>Salima va uning oilasi</summary><div class="inside">
+    <div class="person">Salima Rahmonova</div><div class="person">Muhammad Rahmonov</div>
+    <p>Farzandlari:</p>
+    <div class="person">Xurshid Rahmonov</div>
+    <details><summary>Nozima Rahmonova</summary><div class="inside">
+      <div class="person">Samandar Ergashev — turmush o‘rtog‘i</div>
+    </div></details>
+  </div></details>
+
+  <details><summary>Mohira va uning oilasi</summary><div class="inside">
+    <div class="person">Mohira Karimova</div><div class="person">Iskandar Karimov</div>
+    <p>Farzandlari:</p>
+    <div class="person">Diyorbek Karimov</div>
+    <div class="person">Aziz Karimov</div>
+    <div class="person">Kamola Karimova</div>
+  </div></details>
+
+  <details><summary>Saida va uning oilasi</summary><div class="inside">
+    <div class="person">Saida Yusupova</div><div class="person">Davlat Ali Yusupov</div>
+    <p>Farzandlari:</p>
+    <div class="person">Iroda Yusupova</div>
+    <div class="person">Komila Yusupova</div>
+  </div></details>
+</div>
+</details>
+</section>
+
+<section id="ona">
+<h2>Ona tomondan shajara</h2>
+<div class="gold-line"></div>
+<p class="intro">Onamizning ajdodlari va ona tomondagi qarindoshlarimiz.</p>
+
+<details open>
+<summary>1-avlod — katta bobolar va buvilar</summary>
+<div class="inside">
+  <div class="couple">
+    <strong>Isroil Urayimjanov</strong> + <strong>Mastura Urayimjanova</strong>
+    <p class="note">Ularning farzandi: Abdumutal Ubaydullayev Isroilevich</p>
+  </div>
+  <div class="couple">
+    <strong>To‘xtaboy Mamataliyev</strong> + <strong>Orifa Mamataliyeva</strong>
+    <p class="note">Ularning farzandi: Manzura Ubaydullayeva To‘xtaboyevna</p>
+  </div>
+</div>
+</details>
+
+<details open>
+<summary>2-avlod — bobom va buvim</summary>
+<div class="inside">
+  <div class="person">Abdumutal Ubaydullayev Isroilevich</div>
+  <div class="person">Manzura Ubaydullayeva To‘xtaboyevna</div>
+  <p class="note">Ularning farzandlari:</p>
+
+  <details open><summary>Malohat Haydarova Abdumutalovna — onam</summary>
+    <div class="inside"><div class="person">Malohat Haydarova Abdumutalovna</div>
+    <div class="person">Xakimjon Haydarov Xolmirzayevich — turmush o‘rtog‘i</div>
+    <p class="note">Farzandlari ota tomondagi shajarada ko‘rsatilgan.</p></div>
+  </details>
+
+  <details><summary>Minojat va uning oilasi</summary><div class="inside">
+    <div class="person">Minojat Raximova</div><div class="person">Ahmadjon Raximov</div>
+    <p>Farzandlari:</p>
+    <div class="person">Nozim Ahmadjonov</div>
+    <div class="person">Muazzam Ahmadjonova</div>
+    <div class="person">Muhtasar Ahmadjonova</div>
+    <p class="note">Nikoh holati hozircha aniqlashtirilmagan.</p>
+  </div></details>
+
+  <details><summary>Minavvar va uning oilasi</summary><div class="inside">
+    <div class="person">Minavvar Qosimova</div><div class="person">Asadbek Qosimov</div>
+    <p>Farzandlari:</p>
+    <details><summary>Abu Akbar Asadbekov</summary><div class="inside">
+      <div class="person">Gulnoza Asadbekova — turmush o‘rtog‘i</div>
+      <p>Farzandlari:</p>
+      <div class="person">Soliha Abuakbarova</div>
+      <div class="person">Sanjar Abuakbarov</div>
+    </div></details>
+    <div class="person">Husniddin Asadbekov</div>
+    <div class="person">Gulchehra Asadbekova</div>
+  </div></details>
+
+  <details><summary>Mahfuza va uning oilasi</summary><div class="inside">
+    <div class="person">Mahfuza Murodova</div><div class="person">Sirojiddin Murodov</div>
+    <p>Farzandi:</p>
+    <details><summary>Humoyun Sirojiddinov</summary><div class="inside">
+      <div class="person">Bibisora Sirojiddinova — turmush o‘rtog‘i</div>
+      <p>Farzandi:</p>
+      <div class="person">Iroda Humoyunova</div>
+    </div></details>
+  </div></details>
+</div>
+</details>
 </section>
 
 <section id="tarix">
-<div class="history">
-<h2>Bizning ildizlarimiz</h2>
-<p>
-Oila — mehr, hurmat, tarbiya va qadriyatlar maskani.
-Ajdodlarimizning tarixini bilish va ularning ismlarini
-kelajak avlodlarga yetkazish bizning burchimizdir.
-Ushbu shajara oilamizning tarixini asrab-avaylash
-uchun yaratildi.
-</p>
-<p><strong>Ajdodlarimiz — faxrimiz, avlodlarimiz — davomimiz.</strong></p>
+<h2>Oila tarixi va qadriyatlar</h2>
+<div class="gold-line"></div>
+<div class="panel">
+  <p>
+    Oila — inson hayotidagi eng bebaho boyliklardan biridir.
+    Ajdodlarimizning ismlari va avlodlarimiz tarixini saqlash
+    kelajak avlodlar uchun muhim merosdir.
+  </p>
+  <p>
+    Ushbu shajara ota va ona tomondagi qarindoshlarimizni,
+    ularning farzandlari va keyingi avlodlarini birlashtiradi.
+    Har bir avlod oilamiz tarixining davomidir.
+  </p>
+  <p class="note">
+    Izoh: Ayrim familiyalar oilaviy ma’lumotlar yetishmagani sababli
+    loyiha uchun taklif qilingan. Ularni haqiqiy hujjatlar bilan
+    solishtirib, keyinchalik o‘zgartirish mumkin.
+  </p>
 </div>
 </section>
-
 </main>
 
 <footer>
-XOLMIRZAYEVA OILASI
-<br>
-Oila shajarasi © 2026
+  <div class="ornament">✦ ❖ ✦</div>
+  <p><span>Bizning oilamiz</span> — avlodlar rishtasi</p>
+  <p>Mehr • Hurmat • Qadriyat • Xotira</p>
 </footer>
-
 </body>
     </html>
     
